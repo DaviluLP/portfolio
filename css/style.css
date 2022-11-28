@@ -273,6 +273,12 @@ header {
     color: white;
 }
 
+/* ------ Impressum ------ */
+
+.impressum .impressum-content {
+    text-align: center;
+}
+
 /* ------ Fußzeile ------ */
 
 #main-footer {
