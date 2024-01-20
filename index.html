@@ -13,27 +13,34 @@
 <header>
     <nav id="main-nav">
         <div class="standart-container">
-            <h1>David Ludwig</h1>
-            <ul>
-                <li><a href="/" class="active-page">Startseite</a></li>
-                <li><a href="/contact.html" class="page-link">Kontakt</a></li>
-            </ul>
+            <div style="display: flex; align-items: stretch">
+                <h1>David Ludwig</h1>
+                <div style="flex-grow: 8"></div>
+                <ul>
+                    <li><a href="/" class="active-page">Startseite</a></li>
+                    <li><a href="/contact.html" class="page-link">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 <main>
     <div id="welcome">
         <div class="standart-container">
-            <div class="welcome-img">
-                <img src="/img/20230429_100336.jpg" alt="David Ludwig Profilbild">
-            </div>
-            <div class="welcome-content">
-                <h2><span class="text-highlighted">David Ludwig,</span><br> Streamer und Entwickler aus Leidenschaft
-                </h2>
-                <p>Sie sind auf der Suche nach einem Web-Developer oder jemandem der Ihre Seite einrichtet? Dann sind
-                    Sie bei mir genau richtig. Ich erstelle ihnen Ihre Seite nach Wunsch in den verschiedenen Sprachen
-                    von HTML/CSS und Next.js, bassierend auf React.js!</p>
-                <a class="btn" href="/contact.html">Jetzt Kontakt aufnehmen</a>
+            <div class="flex-welcome-container">
+                <div class="welcome-img">
+                    <img src="/img/20230429_100336.jpg" alt="David Ludwig Profilbild">
+                </div>
+                <div class="welcome-content">
+                    <h2><span class="text-highlighted">David Ludwig,</span><br> Streamer und Entwickler aus Leidenschaft
+                    </h2>
+                    <p>Sie sind auf der Suche nach einem Web-Developer oder jemandem der Ihre Seite einrichtet? Dann
+                        sind
+                        Sie bei mir genau richtig. Ich erstelle ihnen Ihre Seite nach Wunsch in den verschiedenen
+                        Sprachen
+                        von HTML/CSS und Next.js, basierend auf React.js!</p>
+                    <a class="btn" href="/contact.html">Jetzt Kontakt aufnehmen</a>
+                </div>
             </div>
         </div>
     </div>
@@ -57,9 +64,9 @@
     <div id="skills">
         <div class="standart-container">
             <div>
-                <h2>Meine Skills die ich anbieten kann.</h2>
+                <h2>Meine Skills</h2>
             </div>
-            <div>
+            <div class="flex-container">
                 <div class="skills">
                     <h2>HTML / CSS</h2>
                     <p>Die Grundbausteine jeder Website und deren Gestaltung!</p>
@@ -70,23 +77,27 @@
                 </div>
                 <div class="skills">
                     <h2>Next.js</h2>
-                    <p>Eine auf React.js bassierende Sprache um Websites zu erstellen!</p>
+                    <p>Eine auf React.js basierende Sprache um Websites zu erstellen!</p>
                 </div>
-            </div>
-            <div>
-                <div class="standart-container">
-                    <div class="skills">
-                        <h2>C#</h2>
-                        <p>Eine Sprache zur .Net App Entwicklung!</p>
-                    </div>
-                    <div class="skills">
-                        <h2>Unity</h2>
-                        <p>Eine Engine zum Entwickeln von Spielen und Apps!</p>
-                    </div>
-                    <div class="skills">
-                        <h2>Godot</h2>
-                        <p>Zur Entwicklung von Spielen!</p>
-                    </div>
+                <div class="skills">
+                    <h2>C#</h2>
+                    <p>Eine Sprache zur .Net App Entwicklung!</p>
+                </div>
+                <div class="skills">
+                    <h2>C/C++</h2>
+                    <p></p>
+                </div>
+                <div class="skills">
+                    <h2>Unity</h2>
+                    <p>Eine Engine zum Entwickeln von Spielen und Apps!</p>
+                </div>
+                <div class="skills">
+                    <h2>Godot</h2>
+                    <p>Zur Entwicklung von Spielen!</p>
+                </div>
+                <div class="skills">
+                    <h2>Unreal</h2>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -95,7 +106,7 @@
 <footer>
     <div id="main-footer">
         <div class="standart-container">
-            <p>&COPY; 2022 LaviluDevLP | <a href="/impressum.html">Impressum</a> | <a href="/impressum.html">Datenschutzerklärung</a>
+            <p>&COPY; 2023 DeviluDevLP | <a href="/impressum.html">Impressum</a> | <a href="/impressum.html">Datenschutzerklärung</a>
             </p>
         </div>
     </div>

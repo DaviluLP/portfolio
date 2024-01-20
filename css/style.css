@@ -5,6 +5,19 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section, main {
+    flex: 1 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 20px;
 }
@@ -18,15 +31,35 @@ p {
     padding-block: 12px;
 }
 
+.footer {
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 710px) {
+
+}
+
 /* ------ Hilfsklasse ------ */
 
 .standart-container {
-    max-width: 1080px;
     margin: 0 auto;
+    margin-inline: 8%;
 }
 
 .text-highlighted {
     color: #f4a261;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.flex-welcome-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -35,8 +68,7 @@ p {
     background-color: #264653;
     color: #e76f51;
     padding: 10px 15px;
-    border: black;
-    border-style: solid;
+    border: black solid;
     border-radius: 5px;
     text-align: center;
     margin: 15px 0;
@@ -99,7 +131,7 @@ header {
 }
 
 #main-nav ul li {
-    float: left;
+    float: right;
 }
 
 #main-nav ul li a {
@@ -130,15 +162,15 @@ header {
 }
 
 #welcome .welcome-content {
-    float: right;
-    width: 70%;
+
+    justify-self: auto;
     color: white;
-    padding: 130px 50px;
+    padding-block: 130px;
+    padding-inline: 50px;
 }
 
 #welcome .welcome-img {
-    float: left;
-    width: 30%;
+    width: 400px;
     padding-top: 40px;
 }
 
@@ -191,11 +223,10 @@ header {
 #skills .skills {
     margin-top: 20px;
     margin-bottom: 15px;
-    padding: 20px;
+    padding: 15px;
+    width: 250px;
     margin-inline: 1%;
-    float: left;
-    width: 31.33%;
-    min-height: 200px;
+    min-height: 300px;
     border: 2px solid black;
     border-radius: 5px;
     text-align: center;
@@ -290,7 +321,7 @@ header {
 #main-footer p {
     text-align: center;
     padding-left: 35px;
-    color: gray;
+    color: grey;
     font-size: 12px;
 }
 
